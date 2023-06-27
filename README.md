@@ -3,6 +3,7 @@
 ## Problem Statement : Online Food Ordering
 
 Welcome to the Online Food Ordering Webite - Eatzy!
+
 This project  was created with the aim of developing a web application that allows users to conveniently order food from various restaurants online. This README file provides an overview of the project and additional details to get you started.
 
 ### Team
