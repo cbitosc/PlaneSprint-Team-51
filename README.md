@@ -1,6 +1,6 @@
 # PlaneSprint-Team-51
 
-## Eatzy - Now Order Food Online!
+## Problem Statement - Online Food Ordering
 
 Welcome to the Online Food Ordering Webite - Eatzy!
 
