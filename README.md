@@ -27,3 +27,13 @@ Eatzy offers the following features:
    
 ### Hosted Website Link 
 eatzy.pythonanywhere.com
+
+### Usage
+Once you have the website up and running, you can start exploring and using the application. Here are some steps to get started:
+1. Register as a new user in the Sign Up section
+2. If new user, log in with the credentials
+3. Explore the menu and add the desired items to the cart.
+4. Review your cart and make any necessary modifications.
+5. Proceed to checkout and confirm your order.
+
+### Thank You
