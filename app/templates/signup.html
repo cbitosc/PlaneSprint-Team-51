@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Eatzy</title>
+	<link rel="stylesheet" href="static/style_signup.css">
+
+    <link rel="icon" href="/static/favicon.ico">
+
+	</head>
+<body>
+	<selection>
+		<header>
+			<a href="#"><img src="static/logo1.png" class="logo" onclick="location.replace('/');" width="200px"></a>
+			
+		</header>
+	</selection>
+	<div class="container">
+        <div class="forms">
+            <div class="form signup">
+                <span class="title">Registration</span>
+
+                <form action="/signup" method="post">
+                    {% csrf_token %}
+                    <div class="input-field">
+                        <input type="text" placeholder="Enter your First Name" name="fname" required>
+                        <i class="uil uil-user"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" id="idc" placeholder="Enter your Last Name" name="lname" onkeyup="ValidateEmail();" required>
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" class="password" placeholder="Create Username" name="username"  required>
+                        <i class="uil uil-lock icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Create password" name="password" required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
+                    <br>
+                    
+                    {% comment %} <div class="input-field button">
+                        <input type="button" value="Signup" >
+                    </div> {% endcomment %}
+
+                    <button type="submit" class="input-field button" style="background-color:#cc3333;color:white;border:0px;border-radius:10px;font-size:18px;margin-top:-5px;">Signup</button>
+                    <p><p id='alert' style="font-family:poppins;color:red;text-align:center;margin-top:15px;"></p></p>
+                    
+                </form>
+                {% if message %}
+                <br>
+                <p style="font-family:poppins;color:red;text-align:center;margin-top:-20px"><i class="fas fa-triangle-exclamation"></i>&nbsp {{message}}</p>
+                {%endif%}
+                <div class="login-signup" style="margin-top:5px;">
+                    <span class="text" >Already a member?
+                        <a href="/login" class="text login-link">Login Now</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+
+    var check = function() {
+        if (document.getElementById('ida').value ==
+          document.getElementById('idb').value) {
+           
+          document.getElementById('alert').innerHTML = '';
+        } else {
+            
+          document.getElementById('alert').innerHTML = 'Passwords donot match';
+        }
+      }
+</script>
+
+</html>
